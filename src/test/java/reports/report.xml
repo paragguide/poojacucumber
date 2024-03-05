@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="100.156" tests="5" skipped="0" failures="0" errors="0">
+<testcase classname="Amazon Document" name="Amazon Userid test" time="28.487">
+<system-out><![CDATA[
+Given I open "chrome" and get url "https://www.amazon.in/" create report "AmazonLogin".passed
+And click signin............................................................passed
+When I enter valid userid "paragguide@yahoo.co.in"..........................passed
+And click continue button...................................................passed
+Then I validate the userid..................................................passed
+And check password textbox come.............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Amazon Document" name="Amazon Pasword test" time="23.12">
+<system-out><![CDATA[
+Given userid is valid and password txtbox displayed.........................passed
+When i enter correct password "RMinfotech"..................................passed
+Then i should login.........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Amazon Document" name="Product Search - Example #1.1" time="22.96">
+<system-out><![CDATA[
+Given i am logged in........................................................passed
+When i search product Mobile in price range 15000...........................passed
+Then search results must come...............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Amazon Document" name="Product Search - Example #1.2" time="22.728">
+<system-out><![CDATA[
+Given i am logged in........................................................passed
+When i search product LCD in price range 45000..............................passed
+Then search results must come...............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Amazon Document" name="Product Search - Example #1.3" time="2.459">
+<system-out><![CDATA[
+Given i am logged in........................................................passed
+When i search product ipad in price range 52000.............................passed
+Then search results must come...............................................passed
+]]></system-out>
+</testcase>
+</testsuite>
